@@ -7,21 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F32C97E21BF0ACD00CB4EFB /* AddLocationConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C97D21BF0ACD00CB4EFB /* AddLocationConfirmationViewController.swift */; };
+		1F32C98021BF1C8200CB4EFB /* StudentLocationTitleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C97F21BF1C8200CB4EFB /* StudentLocationTitleAnnotation.swift */; };
+		1F32C98221BF2A7800CB4EFB /* StudentLocationNewLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C98121BF2A7800CB4EFB /* StudentLocationNewLocationResponse.swift */; };
+		1F32C98421BF2B9B00CB4EFB /* UdacityStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C98321BF2B9B00CB4EFB /* UdacityStudentInfo.swift */; };
+		1F32C98621BF2C1F00CB4EFB /* UdacityStudentInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C98521BF2C1F00CB4EFB /* UdacityStudentInfoResponse.swift */; };
+		1F32C98821C063BD00CB4EFB /* UIViewController+ShowErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F32C98721C063BD00CB4EFB /* UIViewController+ShowErrorAlert.swift */; };
+		1F5D7D8221BEB72300950AB5 /* StudentLocationAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D7D8121BEB72300950AB5 /* StudentLocationAnnotation.swift */; };
+		1F5D7D8421BEF37800950AB5 /* UdacityDeleteSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D7D8321BEF37800950AB5 /* UdacityDeleteSessionResponse.swift */; };
+		1F5D7D8621BEFDE300950AB5 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D7D8521BEFDE300950AB5 /* AddLocationViewController.swift */; };
 		1FD763FF21BACE9C00712FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD763FE21BACE9C00712FED /* AppDelegate.swift */; };
-		1FD7640121BACE9C00712FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7640021BACE9C00712FED /* ViewController.swift */; };
+		1FD7640121BACE9C00712FED /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7640021BACE9C00712FED /* LoginViewController.swift */; };
 		1FD7640421BACE9C00712FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD7640221BACE9C00712FED /* Main.storyboard */; };
 		1FD7640621BACE9E00712FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FD7640521BACE9E00712FED /* Assets.xcassets */; };
 		1FD7640921BACE9E00712FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FD7640721BACE9E00712FED /* LaunchScreen.storyboard */; };
+		1FD7641421BAD84D00712FED /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641321BAD84D00712FED /* RoundButton.swift */; };
+		1FD7641821BAE3B300712FED /* MapPointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641721BAE3B300712FED /* MapPointsViewController.swift */; };
+		1FD7641A21BAEC7C00712FED /* UdacityAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641921BAEC7C00712FED /* UdacityAPI.swift */; };
+		1FD7641C21BB695600712FED /* UdacitySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641B21BB695600712FED /* UdacitySession.swift */; };
+		1FD7641E21BB69AD00712FED /* UdacityAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641D21BB69AD00712FED /* UdacityAuthResponse.swift */; };
+		1FD7642021BB69DD00712FED /* UdacityAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7641F21BB69DD00712FED /* UdacityAccount.swift */; };
+		1FD7642221BB719000712FED /* UdacityErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642121BB719000712FED /* UdacityErrorResponse.swift */; };
+		1FD7642421BB7B9200712FED /* MapTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642321BB7B9200712FED /* MapTabBarViewController.swift */; };
+		1FD7642621BB7BDC00712FED /* MapListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642521BB7BDC00712FED /* MapListTableViewController.swift */; };
+		1FD7642821BB7F8600712FED /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642721BB7F8600712FED /* StudentLocation.swift */; };
+		1FD7642A21BB846700712FED /* StudentLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642921BB846700712FED /* StudentLocationResponse.swift */; };
+		1FD7642C21BB84C400712FED /* OnTheMapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD7642B21BB84C400712FED /* OnTheMapAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F32C97D21BF0ACD00CB4EFB /* AddLocationConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationConfirmationViewController.swift; sourceTree = "<group>"; };
+		1F32C97F21BF1C8200CB4EFB /* StudentLocationTitleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationTitleAnnotation.swift; sourceTree = "<group>"; };
+		1F32C98121BF2A7800CB4EFB /* StudentLocationNewLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationNewLocationResponse.swift; sourceTree = "<group>"; };
+		1F32C98321BF2B9B00CB4EFB /* UdacityStudentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityStudentInfo.swift; sourceTree = "<group>"; };
+		1F32C98521BF2C1F00CB4EFB /* UdacityStudentInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityStudentInfoResponse.swift; sourceTree = "<group>"; };
+		1F32C98721C063BD00CB4EFB /* UIViewController+ShowErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowErrorAlert.swift"; sourceTree = "<group>"; };
+		1F5D7D8121BEB72300950AB5 /* StudentLocationAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationAnnotation.swift; sourceTree = "<group>"; };
+		1F5D7D8321BEF37800950AB5 /* UdacityDeleteSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityDeleteSessionResponse.swift; sourceTree = "<group>"; };
+		1F5D7D8521BEFDE300950AB5 /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		1FD763FB21BACE9C00712FED /* On The Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "On The Map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD763FE21BACE9C00712FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FD7640021BACE9C00712FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FD7640021BACE9C00712FED /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1FD7640321BACE9C00712FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FD7640521BACE9E00712FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FD7640821BACE9E00712FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FD7640A21BACE9E00712FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FD7641321BAD84D00712FED /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		1FD7641721BAE3B300712FED /* MapPointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointsViewController.swift; sourceTree = "<group>"; };
+		1FD7641921BAEC7C00712FED /* UdacityAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityAPI.swift; sourceTree = "<group>"; };
+		1FD7641B21BB695600712FED /* UdacitySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacitySession.swift; sourceTree = "<group>"; };
+		1FD7641D21BB69AD00712FED /* UdacityAuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityAuthResponse.swift; sourceTree = "<group>"; };
+		1FD7641F21BB69DD00712FED /* UdacityAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityAccount.swift; sourceTree = "<group>"; };
+		1FD7642121BB719000712FED /* UdacityErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UdacityErrorResponse.swift; sourceTree = "<group>"; };
+		1FD7642321BB7B9200712FED /* MapTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTabBarViewController.swift; sourceTree = "<group>"; };
+		1FD7642521BB7BDC00712FED /* MapListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapListTableViewController.swift; sourceTree = "<group>"; };
+		1FD7642721BB7F8600712FED /* StudentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
+		1FD7642921BB846700712FED /* StudentLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLocationResponse.swift; sourceTree = "<group>"; };
+		1FD7642B21BB84C400712FED /* OnTheMapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheMapAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +96,75 @@
 		1FD763FD21BACE9C00712FED /* On The Map */ = {
 			isa = PBXGroup;
 			children = (
-				1FD763FE21BACE9C00712FED /* AppDelegate.swift */,
-				1FD7640021BACE9C00712FED /* ViewController.swift */,
-				1FD7640221BACE9C00712FED /* Main.storyboard */,
-				1FD7640521BACE9E00712FED /* Assets.xcassets */,
-				1FD7640721BACE9E00712FED /* LaunchScreen.storyboard */,
+				1FD7641221BACECF00712FED /* Model */,
+				1FD7641121BACEC600712FED /* View */,
+				1FD7641021BACEB600712FED /* Controller */,
 				1FD7640A21BACE9E00712FED /* Info.plist */,
 			);
 			path = "On The Map";
+			sourceTree = "<group>";
+		};
+		1FD7641021BACEB600712FED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FD763FE21BACE9C00712FED /* AppDelegate.swift */,
+				1FD7640021BACE9C00712FED /* LoginViewController.swift */,
+				1FD7642321BB7B9200712FED /* MapTabBarViewController.swift */,
+				1FD7641721BAE3B300712FED /* MapPointsViewController.swift */,
+				1FD7642521BB7BDC00712FED /* MapListTableViewController.swift */,
+				1F5D7D8521BEFDE300950AB5 /* AddLocationViewController.swift */,
+				1F32C97D21BF0ACD00CB4EFB /* AddLocationConfirmationViewController.swift */,
+				1F32C98721C063BD00CB4EFB /* UIViewController+ShowErrorAlert.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FD7641121BACEC600712FED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FD7640221BACE9C00712FED /* Main.storyboard */,
+				1FD7640521BACE9E00712FED /* Assets.xcassets */,
+				1FD7640721BACE9E00712FED /* LaunchScreen.storyboard */,
+				1FD7641321BAD84D00712FED /* RoundButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FD7641221BACECF00712FED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FD7641921BAEC7C00712FED /* UdacityAPI.swift */,
+				1FD7642E21BB84E000712FED /* UdacityResources */,
+				1FD7642B21BB84C400712FED /* OnTheMapAPI.swift */,
+				1FD7642D21BB84D200712FED /* OnTheMapResources */,
+				1F5D7D8121BEB72300950AB5 /* StudentLocationAnnotation.swift */,
+				1F32C97F21BF1C8200CB4EFB /* StudentLocationTitleAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FD7642D21BB84D200712FED /* OnTheMapResources */ = {
+			isa = PBXGroup;
+			children = (
+				1FD7642721BB7F8600712FED /* StudentLocation.swift */,
+				1FD7642921BB846700712FED /* StudentLocationResponse.swift */,
+				1F32C98121BF2A7800CB4EFB /* StudentLocationNewLocationResponse.swift */,
+			);
+			path = OnTheMapResources;
+			sourceTree = "<group>";
+		};
+		1FD7642E21BB84E000712FED /* UdacityResources */ = {
+			isa = PBXGroup;
+			children = (
+				1FD7641B21BB695600712FED /* UdacitySession.swift */,
+				1FD7641D21BB69AD00712FED /* UdacityAuthResponse.swift */,
+				1FD7641F21BB69DD00712FED /* UdacityAccount.swift */,
+				1FD7642121BB719000712FED /* UdacityErrorResponse.swift */,
+				1F5D7D8321BEF37800950AB5 /* UdacityDeleteSessionResponse.swift */,
+				1F32C98321BF2B9B00CB4EFB /* UdacityStudentInfo.swift */,
+				1F32C98521BF2C1F00CB4EFB /* UdacityStudentInfoResponse.swift */,
+			);
+			path = UdacityResources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +238,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD7640121BACE9C00712FED /* ViewController.swift in Sources */,
+				1FD7642A21BB846700712FED /* StudentLocationResponse.swift in Sources */,
+				1F5D7D8221BEB72300950AB5 /* StudentLocationAnnotation.swift in Sources */,
+				1F32C98421BF2B9B00CB4EFB /* UdacityStudentInfo.swift in Sources */,
+				1FD7642821BB7F8600712FED /* StudentLocation.swift in Sources */,
+				1FD7642221BB719000712FED /* UdacityErrorResponse.swift in Sources */,
+				1FD7642421BB7B9200712FED /* MapTabBarViewController.swift in Sources */,
+				1FD7641C21BB695600712FED /* UdacitySession.swift in Sources */,
+				1FD7641421BAD84D00712FED /* RoundButton.swift in Sources */,
+				1F32C98621BF2C1F00CB4EFB /* UdacityStudentInfoResponse.swift in Sources */,
+				1FD7642C21BB84C400712FED /* OnTheMapAPI.swift in Sources */,
+				1F32C98221BF2A7800CB4EFB /* StudentLocationNewLocationResponse.swift in Sources */,
+				1F32C97E21BF0ACD00CB4EFB /* AddLocationConfirmationViewController.swift in Sources */,
+				1FD7640121BACE9C00712FED /* LoginViewController.swift in Sources */,
+				1FD7641821BAE3B300712FED /* MapPointsViewController.swift in Sources */,
+				1F32C98821C063BD00CB4EFB /* UIViewController+ShowErrorAlert.swift in Sources */,
+				1F32C98021BF1C8200CB4EFB /* StudentLocationTitleAnnotation.swift in Sources */,
 				1FD763FF21BACE9C00712FED /* AppDelegate.swift in Sources */,
+				1FD7642621BB7BDC00712FED /* MapListTableViewController.swift in Sources */,
+				1FD7641E21BB69AD00712FED /* UdacityAuthResponse.swift in Sources */,
+				1FD7641A21BAEC7C00712FED /* UdacityAPI.swift in Sources */,
+				1F5D7D8621BEFDE300950AB5 /* AddLocationViewController.swift in Sources */,
+				1F5D7D8421BEF37800950AB5 /* UdacityDeleteSessionResponse.swift in Sources */,
+				1FD7642021BB69DD00712FED /* UdacityAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
