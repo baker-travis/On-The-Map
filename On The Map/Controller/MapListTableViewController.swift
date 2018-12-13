@@ -9,11 +9,11 @@
 import UIKit
 
 class MapListTableViewController: UITableViewController {
-    var studentLocations: [StudentLocation] = []
+    let notificationCenter = NotificationCenter.default
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        notificationCenter.addObserver(self, selector: #selector(updateStudentLocations), name: .studentLocationsListUpdated, object: nil)
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -31,13 +31,13 @@ class MapListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return studentLocations.count
+        return StudentLocationsModel.studentLocations.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "defaultCell", for: indexPath)
         
-        let studentLocation = self.studentLocations[indexPath.item]
+        let studentLocation = StudentLocationsModel.studentLocations[indexPath.item]
         
         cell.textLabel?.text = "\(studentLocation.firstName) \(studentLocation.lastName)"
         cell.detailTextLabel?.text = studentLocation.mediaURL
@@ -49,7 +49,7 @@ class MapListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let studentLocation = self.studentLocations[indexPath.item]
+        let studentLocation = StudentLocationsModel.studentLocations[indexPath.item]
         
         openUrl(studentLocation.mediaURL)
     }
@@ -60,6 +60,10 @@ class MapListTableViewController: UITableViewController {
         } else {
             showErrorAlert(title: "Bad URL", message: "\(url) is not a valid URL. Please try another.")
         }
+    }
+    
+    @objc func updateStudentLocations() {
+        self.tableView.reloadData()
     }
 
     /*
@@ -72,11 +76,4 @@ class MapListTableViewController: UITableViewController {
     }
     */
 
-}
-
-extension MapListTableViewController: StudentLocationListDelegate {
-    func receiveNewListOfLocations(newLocations: [StudentLocation]) {
-        self.studentLocations = newLocations
-        self.tableView.reloadData()
-    }
 }

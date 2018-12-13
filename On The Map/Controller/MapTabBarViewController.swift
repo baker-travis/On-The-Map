@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol StudentLocationListDelegate {
-    func receiveNewListOfLocations(newLocations: [StudentLocation])
-}
-
 class MapTabBarViewController: UITabBarController {
     @IBOutlet var refreshButton: UIBarButtonItem!
     @IBOutlet weak var addLocationButton: UIBarButtonItem!
@@ -83,13 +79,7 @@ class MapTabBarViewController: UITabBarController {
             return
         }
         
-        if let viewControllers = self.viewControllers {
-            for controller in viewControllers {
-                if let delegate = controller as? StudentLocationListDelegate {
-                    delegate.receiveNewListOfLocations(newLocations: students)
-                }
-            }
-        }
+        StudentLocationsModel.studentLocations = students
     }
     
     @IBAction func logOutButtonPressed(_ sender: Any) {

@@ -10,21 +10,23 @@ import UIKit
 import MapKit
 
 class MapPointsViewController: UIViewController {
-    var studentLocations: [StudentLocation] = []
     var annotations: [MKAnnotation] = []
     var calloutGestureRecognizer: UITapGestureRecognizer?
     @IBOutlet weak var mapView: MKMapView!
+    let notificationCenter = NotificationCenter.default
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.mapView.delegate = self
+        
+        notificationCenter.addObserver(self, selector: #selector(updateStudentLocations), name: .studentLocationsListUpdated, object: nil)
     }
     
     func updateMapAnnotations() {
         self.mapView.removeAnnotations(annotations)
         annotations = []
-        for location in studentLocations {
+        for location in StudentLocationsModel.studentLocations {
             annotations.append(StudentLocationAnnotation(location: location))
         }
         mapView.addAnnotations(annotations)
@@ -43,6 +45,10 @@ class MapPointsViewController: UIViewController {
             openUrl(annotation.studentLocation.mediaURL)
         }
     }
+    
+    @objc func updateStudentLocations() {
+        updateMapAnnotations()
+    }
 
     /*
     // MARK: - Navigation
@@ -54,13 +60,6 @@ class MapPointsViewController: UIViewController {
     }
     */
 
-}
-
-extension MapPointsViewController: StudentLocationListDelegate {
-    func receiveNewListOfLocations(newLocations: [StudentLocation]) {
-        self.studentLocations = newLocations
-        updateMapAnnotations()
-    }
 }
 
 extension MapPointsViewController: MKMapViewDelegate {
