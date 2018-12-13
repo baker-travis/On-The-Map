@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UdacitySession: Codable {
+struct UdacitySession: Codable {
     let id: String
     let expiration: String
 }

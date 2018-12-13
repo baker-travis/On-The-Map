@@ -9,7 +9,7 @@
 import Foundation
 import MapKit
 
-class StudentLocation: Codable {
+struct StudentLocation: Codable {
     let createdAt: String?
     var firstName: String
     var lastName: String

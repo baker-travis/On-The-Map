@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UdacityStudentInfo: Codable {
+struct UdacityStudentInfo: Codable {
     let firstName: String
     let lastName: String
     

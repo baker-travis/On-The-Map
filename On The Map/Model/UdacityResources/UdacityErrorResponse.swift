@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UdacityErrorResponse: Codable {
+struct UdacityErrorResponse: Codable {
     let status: Int
     let error: String
 }

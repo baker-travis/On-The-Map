@@ -8,6 +8,6 @@
 
 import Foundation
 
-class UdacityDeleteSessionResponse: Codable {
+struct UdacityDeleteSessionResponse: Codable {
     let session: UdacitySession
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class UdacityStudentInfoResponse: Codable {
+struct UdacityStudentInfoResponse: Codable {
     let user: UdacityStudentInfo
 }

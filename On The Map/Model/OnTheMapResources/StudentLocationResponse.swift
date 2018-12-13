@@ -8,6 +8,6 @@
 
 import Foundation
 
-class StudentLocationResponse: Codable {
+struct StudentLocationResponse: Codable {
     let results: [StudentLocation]
 }

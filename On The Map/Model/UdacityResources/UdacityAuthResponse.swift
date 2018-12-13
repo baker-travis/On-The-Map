@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UdacityAuthResponse: Codable {
+struct UdacityAuthResponse: Codable {
     let account: UdacityAccount
     let session: UdacitySession
 }
